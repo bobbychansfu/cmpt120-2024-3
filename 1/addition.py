@@ -8,10 +8,8 @@ sample:
 output: 5
 '''
 
-# todo: ask user for a,b
-# ask user for input, put it into a
-a_int = int(input("Please enter an integer: "))
-# ask user for input, put it into b
+# ask user for a,b
+a_int = int(input("Please enter an integer: "))   # ask user for input, put it into a
 b_int = int(input("Please enter an integer: "))
 # add a+b
 sum_of_ab = a_int + b_int
