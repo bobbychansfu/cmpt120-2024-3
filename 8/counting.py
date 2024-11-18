@@ -11,7 +11,7 @@ def count_down(n):
         print(n)
         time.sleep(0.5)
         count_down(n-1)
-        print(n)
-        time.sleep(0.5)
+ #       print(n)
+ #       time.sleep(0.5)
         
 count_down(5)
