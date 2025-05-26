@@ -1,19 +1,30 @@
 '''
-guessing game that asks the user
-for a guess between 1 and 100,
-then prints out whether guess
-is correct, too high, or too low
+  collect user integer input and
+  compare it with a secret number
+  between 1,100.
+  The program will output the relativity
 '''
 import random
 
-SECRET = random.randint(1,100)
-guess = int(input("enter guess [1,100]: "))
+# define the secret number
+SECRET = random.randint(1,100)      # randomized number
 
-if (guess == SECRET):
-    print("you got it!")
-elif (guess > SECRET):
-    print("guess is too high")
-else:
-    print("guess is too low")
+# collect user input
+guess = int(input("guess an integer between [1,100]: "))
 
-print("secret number",SECRET)
+# test relativitiy of secret number
+# print out result to user
+
+if (guess > SECRET):                # guess < SECRET
+    print("guess is too large.")
+    print()
+elif (guess < SECRET):              # guess < SECRET
+    print("guess is too small.")
+    print()
+else:                               # guess == SECRET
+    print("the guess is correct!!!")
+    print()
+
+    # keep playing until secret has been guessed - topic 4
+    
+print("thank you for playing! The SECRET is", SECRET)
